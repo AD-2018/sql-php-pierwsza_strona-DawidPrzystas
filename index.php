@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 
  while($row = $result->fetch_assoc()) {
-	echo "imie: " . $row["imie"]. "zarobki: " . $row["zarobki"]. "<br>";
+	echo " imie: " . $row["imie"]. " zarobki: " . $row["zarobki"]. "<br>";
  }
 
 $conn->close();
