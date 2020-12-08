@@ -16,9 +16,25 @@ $sql = "SELECT * FROM pracownicy";
 $result = $conn->query($sql);
 
 
- while($row = $result->fetch_assoc()) {
-	echo " imie: " . $row["imie"]. " zarobki: " . $row["zarobki"]. "<br>";
- }
+echo("<table border='1'>");
+echo("<tr>");
+echo('
+				<th>id</th>
+				<th>Imie</th>
+				<th>zarobki</th>
+				<th>nazwa dzialu</th>');
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					echo( "<td>".$row['id']."</td>" );
+					echo( "<td>".$row['imie']."</td>" );
+					echo( "<td>".$row['nazwa_dzial']."</td>" );
+					echo( "<td>".$row['zarobki']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
+$conn->close();
 
 $conn->close();
 ?>
