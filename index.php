@@ -18,11 +18,11 @@ $result = $conn->query($sql);
 
 echo("<table border='1'>");
 echo("<tr>");
-echo('
+echo("
 				<th>id</th>
 				<th>Imie</th>
-				<th>zarobki</th>
-				<th>nazwa dzialu</th>');
+				<th>nazwa dzialu</th>
+				<th>zarobki</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
