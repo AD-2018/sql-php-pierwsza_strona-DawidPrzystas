@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dawid strona</title>
+  </head>
+  <body>
+    <h4>imie nazwisjko gr</h4>
+    <h1>tytuł</h1>
+    <div>
+      <a href="orgprac.php">organizacja i pracownicy</a>
+      <a href="fagreg.php">f. agreg</a>
+      <a href="orgprac.php">data i czas</a>
+    </div>
+
 <?php
 
 $servername = "mysql-dawidxdxdxd.alwaysdata.net" ;
@@ -133,3 +150,5 @@ echo("</table>");
 
 $conn->close();
 ?>
+ </body>
+</html>
