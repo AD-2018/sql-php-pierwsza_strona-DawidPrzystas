@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully</br>" ;
 
-$sql = "SELECT * FROM pracownicy, organizacja WHERE dzial = nazwa_dzial";
+$sql = "SELECT imie, dzial FROM pracownicy, organizacja WHERE dzial = nazwa_dzial";
 echo("<li> Zad wprowadzenie: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
