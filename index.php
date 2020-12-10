@@ -49,7 +49,7 @@ echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
 			echo("<tr>");    
-					echo( "<td>".$row['id']."</td>" );
+					echo( "<td>".$row['id_pracownicy']."</td>" );
 					echo( "<td>".$row['imie']."</td>" );
 					echo( "<td>".$row['nazwa_dzial']."</td>" );
 					echo( "<td>".$row['zarobki']."</td>" );
