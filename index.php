@@ -35,7 +35,7 @@ echo("</tr>");
 echo("</table>");
 
 
-$sql = "SELECT  * FROM pracownicy WHERE dzial=2";
+$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
 echo("<li> zad 1".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
