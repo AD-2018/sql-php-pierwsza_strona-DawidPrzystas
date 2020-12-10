@@ -107,7 +107,7 @@ echo("</table>");
 
 
 /*===zad4====*/
-$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (Imie LIKE "%a")";
+$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (Imie LIKE '%a')";
 echo("<li> zad 4 ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
