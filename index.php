@@ -81,6 +81,30 @@ echo("</tr>");
 echo("</table>");
 
 
+/*===zad3====*/
+$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (dzial=1 OR dzial=4)";
+echo("<li> zad 2 ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				<th>id</th>
+				<th>Imie</th>
+				<th>nazwa dzialu</th>
+				<th>zarobki</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					echo( "<td>".$row['id_pracownicy']."</td>" );
+					echo( "<td>".$row['imie']."</td>" );
+					echo( "<td>".$row['nazwa_dzial']."</td>" );
+					echo( "<td>".$row['zarobki']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
+
+
 
 $conn->close();
 ?>
