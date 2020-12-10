@@ -51,7 +51,7 @@ echo("</tr>");
 			echo("<tr>");    
 					echo( "<td>".$row['id']."</td>" );
 					echo( "<td>".$row['imie']."</td>" );
-					echo( "<td>".$row['dzial']."</td>" );
+					echo( "<td>".$row['nazwa_dzial']."</td>" );
 					echo( "<td>".$row['zarobki']."</td>" );
 			echo("</tr>");
   }
