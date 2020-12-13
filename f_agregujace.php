@@ -18,7 +18,7 @@ echo "Connected successfully</br>" ;
 
 /*===zad1====*/
 $sql = "SELECT SUM(zarobki) FROM pracownicy";
-echo("<li> zad 4 ".$sql);
+echo("<li> zad 1 ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -30,12 +30,7 @@ echo("
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
-			echo("<tr>");    
-					echo( "<td>".$row['id_pracownicy']."</td>" );
-					echo( "<td>".$row['imie']."</td>" );
-					echo( "<td>".$row['nazwa_dzial']."</td>" );
-					echo( "<td>".$row['zarobki']."</td>" );
-			echo("</tr>");
+			
   }
 echo("</table>");
 
