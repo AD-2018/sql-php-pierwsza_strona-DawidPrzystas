@@ -1,6 +1,6 @@
 <?php
 
-echo("jest w pliku f.agregujace");
+echo("jest w pliku f.agregujace</br>");
 
 
 $servername = "mysql-dawidxdxdxd.alwaysdata.net" ;
