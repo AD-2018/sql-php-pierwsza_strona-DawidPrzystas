@@ -35,7 +35,7 @@ echo("</tr>");
 					echo( "<td>".$row['id_pracownicy']."</td>" );
 					echo( "<td>".$row['imie']."</td>" );
 					echo( "<td>".$row['nazwa_dzial']."</td>" );
-					echo( "<td>".$row['zarobki']."</td>" );
+					echo( "<td>".$row['SUM(zarobki)']."</td>" );
 			echo("</tr>");
   }
 echo("</table>");
