@@ -23,13 +23,17 @@ $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
 echo("
-				<th>SUM(zarobki)</th>;
-				
+				<th>id</th>
+				<th>Imie</th>
+				<th>nazwa dzialu</th>
+				<th>SUM(zarobki)</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
 			echo("<tr>");    
-					
+					echo( "<td>".$row['id_pracownicy']."</td>" );
+					echo( "<td>".$row['imie']."</td>" );
+					echo( "<td>".$row['nazwa_dzial']."</td>" );
 					echo( "<td>".$row['SUM(zarobki)']."</td>" );
 			echo("</tr>");
   }
