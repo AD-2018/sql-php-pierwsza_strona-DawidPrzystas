@@ -23,9 +23,7 @@ $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
 echo("
-				<th>id</th>
-				<th>Imie</th>
-				<th>nazwa dzialu</th>
+				
 				<th>SUM(zarobki)</th>");
 echo("</tr>");
   
