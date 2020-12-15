@@ -28,7 +28,7 @@ echo "Connected successfully</br>" ;
 
 /*===zad1====*/
 $sql = "SELECT SUM(zarobki) FROM pracownicy";
-echo("<li> zad 1 </br> funkcja: ".$sql);
+echo("<li> zad 1 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -47,7 +47,7 @@ echo("</table>");
 
 /*===zad2====*/
 $sql = "SELECT SUM(zarobki) FROM `pracownicy` WHERE Imie LIKE '%a'";
-echo("<li> zad 2 </br>".$sql);
+echo("<li> zad 2 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
