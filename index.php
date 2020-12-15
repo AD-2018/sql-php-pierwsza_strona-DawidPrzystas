@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dawid strona</title>
+    <title>Dawid-Strona kropka pe el</title>
   </head>
   <body>
-    <h4>imie nazwisjko gr</h4>
+    <h4>Dawid Przystaś</h4>
     <h1>tytuł</h1>
     <div>
       <a href="orgprac.php">organizacja i pracownicy </br></a>
-      <a href="f_agregujace.php">f. agreg</a>
-      <a href="orgprac.php">data i czas</a>
+	  <a href="f_agregujace.php">Funkcje Agregujace </br></a>
+      <a href="orgprac.php">data i czas </br></a>
     </div>
 
 <?php
