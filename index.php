@@ -10,7 +10,7 @@
     <h4>imie nazwisjko gr</h4>
     <h1>tytuł</h1>
     <div>
-      <a href="orgprac.php">organizacja i pracownicy</a>
+      <a href="orgprac.php">organizacja i pracownicy </br></a>
       <a href="f_agregujace.php">f. agreg</a>
       <a href="orgprac.php">data i czas</a>
     </div>
