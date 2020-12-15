@@ -35,6 +35,25 @@ echo("</tr>");
   }
 echo("</table>");
 
+/*===zad2====*/
+$sql = "SELECT SUM(zarobki) FROM `pracownicy` WHERE Imie LIKE '%a'";
+echo("<li> zad 2 ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>SUM(zarobki kobiet)</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['SUM(zarobki)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
+
 
 
 $conn->close();
