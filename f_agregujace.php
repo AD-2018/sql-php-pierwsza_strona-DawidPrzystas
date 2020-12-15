@@ -24,7 +24,7 @@ echo("<table border='1'>");
 echo("<tr>");
 echo("
 				
-				<th>SUM(zarobki)</th>");
+				<th>łączne zarobki</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
@@ -43,7 +43,7 @@ echo("<table border='1'>");
 echo("<tr>");
 echo("
 				
-				<th>SUM(zarobki kobiet)</th>");
+				<th>łączne zarobki kobiet</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
