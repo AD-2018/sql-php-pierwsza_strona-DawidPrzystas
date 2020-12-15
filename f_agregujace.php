@@ -8,9 +8,6 @@
   </head>
   <body>
     <h1>Funkcje Agregujace</h1>
-    <div>
-      <a href="index.php">powrot</a>
-    </div>
 
 <?php
 
