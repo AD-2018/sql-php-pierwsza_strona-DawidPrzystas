@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 echo "Connected successfully</br>" ;
 
 $sql = "SELECT imie, dzial FROM pracownicy, organizacja WHERE dzial = nazwa_dzial";
-echo("<li> Zad wprowadzenie: ".$sql);
+echo("<li> Zad wprowadzenie </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -51,9 +51,9 @@ echo("</tr>");
   }
 echo("</table>");
 
-
+/*===zad1====*/
 $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
-echo("<li> zad 1".$sql);
+echo("<li> zad 1 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -76,7 +76,7 @@ echo("</table>");
 
 /*===zad2====*/
 $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (dzial=2 OR dzial=3)";
-echo("<li> zad 2 ".$sql);
+echo("<li> zad 2 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -100,7 +100,7 @@ echo("</table>");
 
 /*===zad3====*/
 $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (dzial=1 OR dzial=4)";
-echo("<li> zad 3 ".$sql);
+echo("<li> zad 3 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -125,7 +125,7 @@ echo("</table>");
 
 /*===zad4====*/
 $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (Imie LIKE '%a')";
-echo("<li> zad 4 ".$sql);
+echo("<li> zad 4 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
@@ -150,7 +150,7 @@ echo("</table>");
 	  
 /*===zad5====*/
 $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org and (Imie NOT LIKE '%a')";
-echo("<li> zad 4 ".$sql);
+echo("<li> zad 4 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
