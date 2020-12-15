@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+	<div>
+		<a href="index.php">powrot</a>
+	</div>
 <?php
 
 echo("jest w pliku f.agregujace</br>");
@@ -64,3 +70,5 @@ echo("</table>");
 $conn->close();
 
 ?>
+	</body>
+</html>
