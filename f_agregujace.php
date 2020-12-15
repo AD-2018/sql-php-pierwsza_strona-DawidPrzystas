@@ -14,9 +14,6 @@
 
 <?php
 
-echo("jest w pliku f.agregujace</br>");
-
-
 $servername = "mysql-dawidxdxdxd.alwaysdata.net" ;
 $username = "220777" ;
 $password = "turbosecretpassword" ;
