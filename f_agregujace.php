@@ -28,7 +28,7 @@ echo "Connected successfully</br>" ;
 
 /*===zad1====*/
 $sql = "SELECT SUM(zarobki) FROM pracownicy";
-echo("<li> zad 1 </br>".$sql);
+echo("<li> zad 1 </br> funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
