@@ -37,7 +37,7 @@ echo("</table>");
 
 /*===zad2====*/
 $sql = "SELECT SUM(zarobki) FROM `pracownicy` WHERE Imie LIKE '%a'";
-echo("<li> zad 2 ".$sql);
+echo("<li> zad 2 </br>".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
