@@ -1,5 +1,3 @@
-
-
 <?php
 
 echo("jest w pliku f.agregujace</br>");
@@ -16,12 +14,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error) ;
 }
 echo "Connected successfully</br>" ;
-
-<div>
-      <a href="index.php">powrót</a>
-	
-</div>
-
 
 /*===zad1====*/
 $sql = "SELECT SUM(zarobki) FROM pracownicy";
