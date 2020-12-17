@@ -8,14 +8,12 @@
   </head>
   <body>
     <h1>Funkcje Agregujace</h1>
-    <div>
-      <a href="index.php">powrot</a>
-    </div>
+    
 
 <?php
 
 require_once("connect.php");
-echo "Connected successfully</br>" ;
+require_once("menu.php");
 
 /*===zad1====*/
 $sql = "SELECT SUM(zarobki) FROM pracownicy";
