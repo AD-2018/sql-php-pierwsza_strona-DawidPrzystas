@@ -9,11 +9,7 @@
   <body>
     <h4>Dawid Przystaś</h4>
     <h1>Strona Główna</h1>
-    <div>
-      <a href="orgprac.php">organizacja i pracownicy </br></a>
-	  <a href="f_agregujace.php">Funkcje Agregujace </br></a>
-      <a href="orgprac.php">data i czas </br></a>
-    </div>
+    
 
 <?php
 require_once("connect.php");
