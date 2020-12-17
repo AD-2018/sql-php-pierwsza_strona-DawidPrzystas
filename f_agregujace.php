@@ -146,6 +146,30 @@ echo("</table>");
 
 
 $conn->close();
+	  
+	  
+/*===zad7====*/
+$sql = "SELECT COUNT(imie) FROM pracownicy";
+echo("<li> zad 7 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>ilość pracowników</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['COUNT(imie)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
+
+
+
+$conn->close();
 
 ?>
   </body>
