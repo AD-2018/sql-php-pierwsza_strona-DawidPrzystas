@@ -83,6 +83,25 @@ echo("</tr>");
 			echo("</tr>");
   }
 echo("</table>");
+	  
+/*===zad4====*/
+$sql = "SELECT avg(zarobki) FROM pracownicy WHERE imie NOT LIKE '%a'";
+echo("<li> zad 3 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>średnia zarobków mężczyzn</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['SUM(zarobki)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
 
 
 
