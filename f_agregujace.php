@@ -147,7 +147,7 @@ echo("<table border='1'>");
 echo("<tr>");
 echo("
 				
-				<th>ilość pracowników</th>");
+				<th>ilosc pracownikow</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
