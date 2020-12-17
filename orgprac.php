@@ -8,9 +8,7 @@
   </head>
   <body>
     <h1>Data i Czas</h1>
-    <div>
-      <a href="index.php">powrot</a>
-    </div>
+    
 
 <?php
 
