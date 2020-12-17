@@ -86,13 +86,33 @@ echo("</table>");
 	  
 /*===zad4====*/
 $sql = "SELECT avg(zarobki) FROM pracownicy WHERE imie NOT LIKE '%a'";
-echo("<li> zad 3 </br> Funkcja: ".$sql);
+echo("<li> zad 4 </br> Funkcja: ".$sql);
 $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
 echo("
 				
 				<th>średnia zarobków mężczyzn</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['avg(zarobki)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
+	  
+	  
+/*===zad5====*/
+$sql = "SELECT avg(zarobki) FROM pracownicy WHERE dzial=4";
+echo("<li> zad 5 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>średnia zarobków w dziale 4</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
