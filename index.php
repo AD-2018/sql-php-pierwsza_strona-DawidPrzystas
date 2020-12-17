@@ -17,6 +17,7 @@
 
 <?php
 require_once("connect.php");
+require_once("menu.php");
 
 
 $sql = "SELECT imie, dzial FROM pracownicy, organizacja WHERE dzial = nazwa_dzial";
