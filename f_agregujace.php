@@ -63,6 +63,26 @@ echo("</tr>");
 			echo("</tr>");
   }
 echo("</table>");
+	  
+	  
+/*===zad3====*/
+$sql = "SELECT SUM(zarobki) FROM pracownicy WHERE imie NOT LIKE '%a' and (dzial=3 OR dzial=2)";
+echo("<li> zad 3 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>zarobki mężczyzn z dzialu 2 i 3</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['SUM(zarobki)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
 
 
 
