@@ -157,6 +157,26 @@ echo("</tr>");
 			echo("</tr>");
   }
 echo("</table>");
+	  
+	  
+/*===zad8====*/
+$sql = "SELECT COUNT(imie) FROM pracownicy WHERE imie LIKE '%a' and (dzial=1 OR dzial=3)";
+echo("<li> zad 8 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>ilość kobiet w dziale 1 i 3</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['COUNT(imie)']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
 
 
 
