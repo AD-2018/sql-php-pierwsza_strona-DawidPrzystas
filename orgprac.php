@@ -15,8 +15,9 @@
 <?php
 
     require_once("connect.php");
+    require_once("menu.php");
 
-echo "Connected successfully</br>" ;
+
 ?>
 </body>
 </html>
