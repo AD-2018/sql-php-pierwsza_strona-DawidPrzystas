@@ -136,7 +136,6 @@ echo("</table>");
 
 
 
-$conn->close();
 	  
 	  
 /*===zad7====*/
