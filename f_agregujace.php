@@ -98,7 +98,7 @@ echo("</tr>");
   while($row = $result->fetch_assoc()) {
 			echo("<tr>");    
 					
-					echo( "<td>".$row['SUM(zarobki)']."</td>" );
+					echo( "<td>".$row['avg(zarobki)']."</td>" );
 			echo("</tr>");
   }
 echo("</table>");
