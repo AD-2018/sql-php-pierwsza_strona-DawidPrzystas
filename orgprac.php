@@ -22,15 +22,14 @@ $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
 echo("
-				
-				<th>wiek pracowników</th>");
+				<th>imie</th>);
+				<th>wiek</th>);
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
 			echo("<tr>");    
-					
+					echo( "<td>".$row['imie']."</td>" );
 					echo( "<td>".$row['wiek']."</td>" );
-	  				echo( "<td>".$row['imie']."</td>" );
 			echo("</tr>");
   }
 echo("</table>");
