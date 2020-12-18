@@ -41,7 +41,7 @@ echo("</table>");
 	  function zapytanie(){
 	 	require_once("connect.php");
 		  $sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
-		echo("<li> ZADANIE Z FUNKCJI </br> Funkcja: ".$sql);
+		echo("<li> 1 </br> Funkcja: ".$sql);
 		$result = $conn->query($sql);
 		echo("<table border='1'>");
 		echo("<tr>");
