@@ -14,6 +14,25 @@
 
     require_once("connect.php");
     require_once("menu.php");
+    
+    /*===zad1====*/
+$sql = "SELECT * ,YEAR(CURDATE())-YEAR(data_urodzenia) AS wiek FROM pracownicy";
+echo("<li> zad 1 </br> Funkcja: ".$sql);
+$result = $conn->query($sql);
+echo("<table border='1'>");
+echo("<tr>");
+echo("
+				
+				<th>wiek pracowników</th>");
+echo("</tr>");
+  
+  while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					
+					echo( "<td>".$row['wiek']."</td>" );
+			echo("</tr>");
+  }
+echo("</table>");
 
 
 ?>
