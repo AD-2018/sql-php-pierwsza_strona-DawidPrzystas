@@ -33,6 +33,34 @@ echo("</tr>");
 			echo("</tr>");
   }
 echo("</table>");
+	  
+	  
+	  /*===zad2====*/
+	  function zapytanie($sql){
+	 	require("connect.php");
+		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
+		echo("<li> 111 </br> Funkcja: ".$sql);
+		$result = $conn->query($sql);
+		echo("<table border='1'>");
+		echo("<tr>");
+		echo("
+				<th>id</th>
+				<th>Imie</th>
+				<th>nazwa dzialu</th>
+				<th>zarobki</th>");
+		echo("</tr>");
+  
+  		while($row = $result->fetch_assoc()) {
+			echo("<tr>");    
+					echo( "<td>".$row['imie']."</td>" );
+					//echo( "<td>".$row['imie']."</td>" );
+					//echo( "<td>".$row['nazwa_dzial']."</td>" );
+					echo( "<td>".$row['wiek']."</td>" );
+			echo("</tr>");
+  		}
+	echo("</table>");  
+	}
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial="serwis");
 
 
 ?>
