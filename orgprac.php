@@ -44,23 +44,19 @@ echo("</table>");
 		echo("<table border='1'>");
 		echo("<tr>");
 		echo("
-				<th>id</th>
-				<th>Imie</th>
-				<th>nazwa dzialu</th>
-				<th>zarobki</th>");
+				<th>imie</th>
+				<th>wiek</th>");
 		echo("</tr>");
   
   		while($row = $result->fetch_assoc()) {
 			echo("<tr>");    
-					echo( "<td>".$row['id_pracownicy']."</td>" );
 					echo( "<td>".$row['imie']."</td>" );
-					echo( "<td>".$row['nazwa_dzial']."</td>" );
-					echo( "<td>".$row['zarobki']."</td>" );
+					echo( "<td>".$row['wiek']."</td>" );
 			echo("</tr>");
   		}
 	echo("</table>");  
 	}
-	zapytanie("SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org");
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'");
 
 
 ?>
