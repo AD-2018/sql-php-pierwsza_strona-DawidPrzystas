@@ -22,8 +22,8 @@ $result = $conn->query($sql);
 echo("<table border='1'>");
 echo("<tr>");
 echo("
-				<th>imie</th>);
-				<th>wiek</th>);
+				<th>imie</th>;
+				<th>wiek</th>");
 echo("</tr>");
   
   while($row = $result->fetch_assoc()) {
