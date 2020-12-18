@@ -30,6 +30,7 @@ echo("</tr>");
 			echo("<tr>");    
 					
 					echo( "<td>".$row['wiek']."</td>" );
+	  				echo( "<td>".$row['imie']."</td>" );
 			echo("</tr>");
   }
 echo("</table>");
