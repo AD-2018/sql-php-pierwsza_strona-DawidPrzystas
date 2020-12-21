@@ -39,7 +39,7 @@ echo("</table>");
 	  function zapytanie($sql,$conn){
 	 	/*require("connect.php");*/
 		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
-		echo("<h2>Zad. 1 : Pracownicy tylko z działu 1 i 4</h4>");
+		echo("<h2>Zad. 2 : Wiek poszczególnych pracowników (w latach) z działu serwis</h4>");
 		echo("<li> Funkcja: ".$sql);
 		$result = $conn->query($sql);
 		//zwraca błąd jeśli zapytanie jest nieprawidłowo zapisane
@@ -67,7 +67,7 @@ echo("</table>");
   		}
 	echo("</table>");  
 	}
-	zapytanie("SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org", $conn);
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial="serwis", $conn);
 	  
 	  
 
