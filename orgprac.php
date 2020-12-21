@@ -50,34 +50,7 @@ echo("start") ;
 	//zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn);
 	  
 	  
-	   /*===zad3====*/
-	  function zapytanie($sql,$conn){
-		echo("<h2>Zad. 3 : Suma lat wszystkich pracowników</h4>");
-		echo("<li> Funkcja: ".$sql);
-		$result = $conn->query($sql);
-		//zwraca błąd jeśli zapytanie jest nieprawidłowo zapisane
-		if ( $result) {
-		      echo "<li> zapytanie wykonało się prawidłowo, wszystko ok";
-		} else {
-		      echo "Uwaga Error: " . $sql . "<br>" . mysqli_error($conn);
-		}
-		echo("<table border='1'>");
-		echo("<tr>");
-		echo("
-				
-				<th>SumaLat</th>");
-		echo("</tr>");
-  
-  		while($row = $result->fetch_assoc()) {
-			echo("<tr>");    
-					echo( "<td>".$row['SumaLat']."</td>" );
-					
-			echo("</tr>");
-  		}
-	echo("</table>");  
-	}
-	//zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy", $conn);
-	  
+	
 	  
 
 
