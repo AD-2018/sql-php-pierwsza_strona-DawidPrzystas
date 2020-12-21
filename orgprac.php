@@ -48,19 +48,23 @@ echo("start") ;
 	echo("</table>");  
 	}
 	  
+	  /*===zad1====*/ 
+	  
+	zapytanie("SELECT * ,YEAR(CURDATE())-YEAR(data_urodzenia) AS wiek FROM pracownicy", $conn, zad1);
+	  
 	  
 	/*===zad2====*/ 
 	  
-	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn, zad1);
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn, zad2);
 	  
 	  
 	 /*===zad3====*/
 	
-	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='handel'", $conn, zad2);
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='handel'", $conn, zad3);
 	  
 	  /*===zad4====*/
 	
-	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn, zad3);
+	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn, zad4);
 	  
 
 
