@@ -19,8 +19,6 @@ echo("start") ;
 	  
 	 /*===zad2====*/
 	  function zapytanie($sql,$conn){
-	 	/*require("connect.php");*/
-		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
 		echo("<h2>Zad. 2 : Wiek poszczególnych pracowników (w latach) z działu serwis</h4>");
 		echo("<li> Funkcja: ".$sql);
 		$result = $conn->query($sql);
@@ -54,8 +52,6 @@ echo("start") ;
 	  
 	   /*===zad3====*/
 	  function zapytanie($sql,$conn){
-	 	/*require("connect.php");*/
-		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
 		echo("<h2>Zad. 3 : Suma lat wszystkich pracowników</h4>");
 		echo("<li> Funkcja: ".$sql);
 		$result = $conn->query($sql);
