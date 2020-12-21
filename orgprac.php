@@ -18,8 +18,8 @@
 echo("start") ;
 	  
 	
-	  function zapytanie($sql,$conn){
-		echo("<h2>Zad. 2 : Wiek poszczególnych pracowników (w latach) z działu serwis</h4>");
+	  function zapytanie($sql,$conn,$nazwa){
+		echo("<h2>$nazwa</h4>");
 		echo("<li> Funkcja: ".$sql);
 		$result = $conn->query($sql);
 		//zwraca błąd jeśli zapytanie jest nieprawidłowo zapisane
@@ -51,16 +51,16 @@ echo("start") ;
 	  
 	/*===zad2====*/ 
 	  
-	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn);
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn, zad1);
 	  
 	  
 	 /*===zad3====*/
 	
-	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='handel'", $conn);
+	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='handel'", $conn, zad2);
 	  
 	  /*===zad4====*/
 	
-	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn);
+	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn, zad3);
 	  
 
 
