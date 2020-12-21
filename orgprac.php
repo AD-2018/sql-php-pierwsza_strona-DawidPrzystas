@@ -15,25 +15,7 @@
     require_once("connect.php");
     require_once("menu.php");
     
-    /*===zad1====*/
-$sql = "SELECT * ,YEAR(CURDATE())-YEAR(data_urodzenia) AS wiek FROM pracownicy";
-echo("<li> zad 1 </br> Funkcja: ".$sql);
-$result = $conn->query($sql);
-echo("<table border='1'>");
-echo("<tr>");
-echo("
-				<th>imie</th>;
-				<th>wiek</th>");
-echo("</tr>");
-  
-  while($row = $result->fetch_assoc()) {
-			echo("<tr>");    
-					echo( "<td>".$row['imie']."</td>" );
-					echo( "<td>".$row['wiek']."</td>" );
-			echo("</tr>");
-  }
-echo("</table>");
-	  
+echo("start") ;
 	  
 	 /*===zad2====*/
 	  function zapytanie($sql,$conn){
@@ -67,7 +49,7 @@ echo("</table>");
   		}
 	echo("</table>");  
 	}
-	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn);
+	//zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'", $conn);
 	  
 	  
 	   /*===zad3====*/
@@ -98,7 +80,7 @@ echo("</table>");
   		}
 	echo("</table>");  
 	}
-	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy", $conn);
+	//zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy", $conn);
 	  
 	  
 
