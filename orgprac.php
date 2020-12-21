@@ -62,7 +62,7 @@ echo("</table>");
 	  function zapytanie($sql,$conn){
 	 	/*require("connect.php");*/
 		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
-		echo("<h2>Zad. 3 : Pracownicy tylko z działu 1 i 4</h4>");
+		echo("<h2>Zad. 3 : Suma lat wszystkich pracowników</h4>");
 		echo("<li> Funkcja: ".$sql);
 		$result = $conn->query($sql);
 		//zwraca błąd jeśli zapytanie jest nieprawidłowo zapisane
@@ -90,7 +90,7 @@ echo("</table>");
   		}
 	echo("</table>");  
 	}
-	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy;", $conn);
+	
 
 
 ?>
