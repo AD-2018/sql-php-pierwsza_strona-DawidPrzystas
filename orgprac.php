@@ -12,7 +12,7 @@
 
 <?php
 
-    require_once("connect.php");
+    require("connect.php");
     require_once("menu.php");
     
 echo("start") ;
