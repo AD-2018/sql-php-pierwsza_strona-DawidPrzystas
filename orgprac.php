@@ -64,7 +64,7 @@ echo("start") ;
 	  
 	  /*===zad4====*/
 	
-	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn zad4-Suma lat pracowników z działu handel  );
+	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn zad4 Suma lat pracowników z działu handel  );
 	  
 
 
