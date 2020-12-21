@@ -48,7 +48,7 @@ echo("</table>");
 		if ( $result) {
 		      echo "<li> zapytanie wykonało się prawidłowo, wszystko ok";
 		} else {
-		      echo "Uwaga Error: " . $sql . "<br>" . mysqli_error($conn);
+		     /* echo "Uwaga Error: " . $sql . "<br>" . mysqli_error($conn);*/
 		}
 		echo("<table border='1'>");
 		echo("<tr>");
