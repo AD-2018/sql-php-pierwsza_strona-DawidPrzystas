@@ -38,7 +38,7 @@ echo("</tr>");
 echo("</table>");
 
 /*===zad1====*/
-	  function zapytanie($sql,$conn2){
+	  function zapytanie($sql,$conn){
 	 	/*require("connect.php");*/
 		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
 		echo("<li> 111 </br> Funkcja: ".$sql);
