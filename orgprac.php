@@ -50,7 +50,7 @@ echo("start") ;
 	  
 	  /*===zad1====*/ 
 	  
-	zapytanie("SELECT * ,YEAR(CURDATE())-YEAR(data_urodzenia) AS wiek FROM pracownicy", $conn, zad1 Wiek poszczególnych pracowników (w latach));
+	zapytanie("SELECT * ,YEAR(CURDATE())-YEAR(data_urodzenia) AS wiek FROM pracownicy", $conn, zad1);
 	  
 	  
 	/*===zad2====*/ 
