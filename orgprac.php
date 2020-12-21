@@ -12,8 +12,8 @@
 
 <?php
 
-    require_once("connect.php");
-    require_once("menu.php");
+//    require_once("connect.php");
+ //   require_once("menu.php");
     
 echo("start") ;
 	  
