@@ -58,6 +58,10 @@ echo("start") ;
 	
 	zapytanie("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='handel'", $conn);
 	  
+	  /*===zad4====*/
+	
+	zapytanie("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'", $conn);
+	  
 
 
 ?>
