@@ -43,7 +43,7 @@ echo("</table>");
 		  //$sql = "SELECT * FROM `pracownicy` , `organizacja` WHERE dzial = id_org";
 		echo("<h2>Zad. 1 : Pracownicy tylko z działu 1 i 4</h4>");
 		echo("<li> Funkcja: ".$sql");
-		$result = $conn2->query($sql);
+		$result = $conn->query($sql);
 		//zwraca błąd jeśli zapytanie jest nieprawidłowo zapisane
 		if ( $result) {
 		      echo "<li> zapytanie wykonało się prawidłowo, wszystko ok";
