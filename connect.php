@@ -3,7 +3,7 @@
 $servername = "mysql-dawidxdxdxdxdxd.alwaysdata.net" ;
 $username = "225863" ;
 $password = "turbosecretpassword" ;
-$dbname = "dawidxdxdxd_pracownicy" ;
+$dbname = "dawidxdxdxdxdxd_a" ;
 
 $conn = new mysqli($servername, $username, $password, $dbname) ;
 
