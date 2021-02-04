@@ -1,7 +1,7 @@
 <?php
 
 $servername = "mysql-dawidxdxdxd.alwaysdata.net" ;
-$username = "220777" ;
+$username = "dawidxdxdxd" ;
 $password = "turbosecretpassword" ;
 $dbname = "dawidxdxdxd_pracownicy" ;
 
