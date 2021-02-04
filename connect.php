@@ -1,6 +1,6 @@
 <?php
 
-$servername = "mysql-dawidxdxdxd.alwaysdata.net" ;
+$servername = "mysql-dawidxdxdxdxdxd.alwaysdata.net" ;
 $username = "225863" ;
 $password = "turbosecretpassword" ;
 $dbname = "dawidxdxdxd_pracownicy" ;
